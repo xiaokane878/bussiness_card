@@ -6,66 +6,73 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f77600b8df.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <div class="header_left">
-            <h1>Kane Chen</h1>
-            <div class="bio">
-                <p>I like me :)</p>
-                <p>Am trying my best to do this while also fighting procrastination. Pls Wish me luck!</p>
-            </div>
-        </div>
-        <div class="header_right">
-            <div class="header_btn">
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="skills">
-            <h1>Skills</h1>
-            <div class="section_row">
-                <div class="section_item">
-                    <img src="html_logo.png" alt="">
-                </div>
-                <div class="section_item">
-                    <img src="css_logo.png" alt="">
-                </div>
-                <div class="section_item">
-                    <img src="js_logo.png" alt="">
+    <body>
+        <header>
+            <div class="header_left">
+                <h1>Kane Chen</h1>
+                <div class="bio">
+                    <p>I like me :)</p>
+                    <p>Am trying my best to do this while also fighting procrastination. Pls Wish me luck!</p>
                 </div>
             </div>
-        </section>
-        <section class="projects">
-            <h1>Projects</h1>
-            <div class="section_row">
-                <div class="section_item github">
-                    <a href="https://github.com/xiaokane878">
-                        <img src="github_logo.png" alt="">
-                    </a>
+            <div class="header_right">
+                <div class="header_btn">
+                    <i class="fa-solid fa-chevron-down"></i>
                 </div>
             </div>
-        </section>
-        <section class="contacts">
-            <h1>Contacts</h1>
-            <div class="section_row">
-                <div class="section_item">
-                    <a href="https://t.me/your_nickname">
-                        <img src="tg_logo.svg" alt="">
-                    </a>
+        </header>
+        <main>
+            <section class="skills">
+                <h1>Skills</h1>
+                <div class="section_row">
+                    <div class="section_item">
+                        <img src="html_logo.png" alt="">
+                    </div>
+                    <div class="section_item">
+                        <img src="css_logo.png" alt="">
+                    </div>
+                    <div class="section_item">
+                        <img src="js_logo.png" alt="">
+                    </div>
                 </div>
-                <div class="section_item">
-                    <a href="mailto:xiaokane878@gmail.com">
-                        <img src="email_logo.png" alt="">
-                    </a>
+            </section>
+            <section class="projects">
+                <h1>Projects</h1>
+                <div class="section_row">
+                    <div class="section_item github">
+                        <a href="https://github.com/xiaokane878">
+                            <img src="github_logo.png" alt="">
+                        </a>
+                    </div>
                 </div>
+            </section>
+            <section class="contacts">
+                <h1>Contacts</h1>
+                <div class="section_row">
+                    <div class="section_item">
+                        <a href="https://t.me/your_nickname">
+                            <img src="tg_logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="section_item">
+                        <a href="mailto:xiaokane878@gmail.com">
+                            <img src="email_logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_content">
+                Created by me in 2023 | Algorithmics
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer_content">
-            Created by me in 2023 | Algorithmics
-        </div>
-    </footer>
-</body>
+        </footer>
+        <script>
+            let btn = document.querySelector(".header_btn")
+            btn.addEventListener('click', () => {
+                document.querySelector(".skills").scrollIntoView({ behavior: "smooth" });
+            });
+        </script>
+    </body>
 </html>
+
